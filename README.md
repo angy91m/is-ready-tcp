@@ -8,11 +8,6 @@
 npm i is-ready-tcp
 ```
 
-## Test
-```bash
-npm test
-```
-
 ## Usage
 
 ```javascript
