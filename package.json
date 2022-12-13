@@ -1,0 +1,26 @@
+{
+  "name": "is-ready-tcp",
+  "version": "1.0.0",
+  "description": "Simple check to tcp service",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angy91m/is-ready-tcp.git"
+  },
+  "keywords": [
+    "tcp",
+    "telnet",
+    "service",
+    "check"
+  ],
+  "author": "angy91m",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/angy91m/is-ready-tcp/issues"
+  },
+  "homepage": "https://github.com/angy91m/is-ready-tcp#readme"
+}
