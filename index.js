@@ -5,17 +5,17 @@ const net = require( 'net' ),
             const client = net.connect( { port, host } );
             const to = setTimeout( () => {
                 clearTimeout( to );
-                client.end();
+                client.destroy();
                 reject( new Error( 'Timeout exceeded' ) );
             }, timeout );
             client.on( 'connect', () => {
                 clearTimeout( to );
-                client.end();
+                client.destroy();
                 resolve();
             } );
             client.on( 'error', err => {
                 clearTimeout( to );
-                client.end();
+                client.destroy();
                 reject( err );
             } );
         } );
