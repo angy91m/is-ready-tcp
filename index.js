@@ -2,11 +2,12 @@
 const net = require( 'net' ),
     connect = ( port, host, timeout ) => {
         return new Promise( ( resolve, reject ) => {
+            const client = net.connect( { port, host } );
             const to = setTimeout( () => {
                 clearTimeout( to );
+                client.end();
                 reject( new Error( 'Timeout exceeded' ) );
             }, timeout );
-            const client = net.connect( { port, host } );
             client.on( 'connect', () => {
                 clearTimeout( to );
                 client.end();

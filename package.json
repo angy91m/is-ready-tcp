@@ -1,6 +1,6 @@
 {
   "name": "is-ready-tcp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simple check to tcp service",
   "main": "index.js",
   "types": "index.d.ts",
